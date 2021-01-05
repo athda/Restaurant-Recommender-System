@@ -1,1 +1,2 @@
 pandas~=1.1.3
+Eigen library for recommendation (https://gitlab.com/libeigen/eigen/-/tree/master/Eigen)
