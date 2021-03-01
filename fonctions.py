@@ -33,6 +33,11 @@ def count_file_lines(input_file):
     for line in file:
         i = i + 1
     return i
+def delete_empty_columns(df):
+    for (columnName, columnData) in df.iteritems():
+        if(df[columnName].isnull().sum() * 100 / len(df) == 100):
+            df=df.drop(columnName, axis=1)
+    return df
 #########################################-etape 2 du prétraitement(le nettoyage)-#########################################################
 #
 # traitement des valeurs nulls
